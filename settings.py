@@ -4,7 +4,7 @@ DEBUG = True
 TEMPLATE_DEBUG = DEBUG
 
 ADMINS = (
-    # ('Your Name', 'your_email@domain.com'),
+     ('juan carlos', 'juan.carrasco@clockwise.cl'),
 )
 
 MANAGERS = ADMINS
@@ -81,4 +81,11 @@ INSTALLED_APPS = (
     'django.contrib.sites',
     'django.contrib.admin',
     'demojuan.apps.ventas',
+    'demojuan.apps.webServices.wsProductos',
 )
+
+EMAIL_HOST = 'smtp.gmail.com'
+EMAIL_PORT = 587
+EMAIL_HOST_USER = 'juan.carrasco@clockwise.cl'
+EMAIL_HOST_PASSWORD = 'mvpemq100v'
+EMAIL_USE_TLS = True

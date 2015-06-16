@@ -1,0 +1,17 @@
+<html>
+<head>
+	<title>Contactanos</title>
+</head>
+<body>
+{%if info_enviado %}
+	gracias por su comentario
+	
+{%else %}
+	<form action="." method="POST">
+		{{form.as_p}}
+	<input type ="submit" value="Enviar"/>
+	</form>
+
+{%endif %}
+</body>
+</html>	
